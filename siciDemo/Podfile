@@ -9,6 +9,10 @@ target 'siciDemo' do
   pod 'Alamofire'
   pod 'SnapKit' #AutoLayout
   pod 'SwiftyJSON' #JSON解析
+  
+  pod 'YYImage'
+  pod 'YYWebImage'
+  pod 'Giphy' # gif测试
 
   target 'siciDemoTests' do
     inherit! :search_paths

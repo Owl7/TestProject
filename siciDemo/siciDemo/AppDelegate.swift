@@ -7,18 +7,22 @@
 //
 
 import UIKit
+import GiphyUISDK
+import GiphyCoreSDK
+
+let kGifApiKey = "k1bFwryl795OQ8o7L7VXMNqpaqzh6moZ"
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        TestService.getToken { (isSucc, msg) in
-            
-        }
+//        TestService.getToken { (isSucc, msg) in
+//            
+//        }
+        
+        Giphy.configure(apiKey: kGifApiKey)
         
         return true
     }
