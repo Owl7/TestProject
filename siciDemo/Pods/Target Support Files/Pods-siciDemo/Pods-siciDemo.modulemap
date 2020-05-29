@@ -1,0 +1,6 @@
+framework module Pods_siciDemo {
+  umbrella header "Pods-siciDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}
